@@ -1,3 +1,18 @@
+a {
+    font-weight: bold;
+    color: #339999;
+}
+
+a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+
+.jumbotron {
+    background: #fff;
+}
+
 .header {
     background: #ccc;
     margin-top: -50px;
@@ -13,20 +28,23 @@
 }
 
 .short-profile {
-    background: #ccc;
-    border: 2px solid #ddd;
+    background: #fff;
+    border: 0px solid #ddd;
     border-radius: 20px;
     margin-left: -15px;
-    padding-left: 30px;
 }
 
 .top-content {
-    margin-bottom: -50px;
+    margin-bottom: -90px;
 }
 
 .short-profile h3 {
     color: #444;
     background: #bbb;
+}
+
+p.profile-section {
+    margin-bottom: 30px;
 }
 
 .short-profile h4 {
@@ -35,21 +53,9 @@
     margin-bottom: 0px;
 }
 
-a {
-    font-weight: bold;
-    color: #339999;
-}
-
-/* .main-content { */
-/*     background: #eee; */
-/*     border-radius: 20px; */
-/*     padding: 10px; */
-/*     color: #555; */
-/* } */
-
 .section h2 {
-    color: #444;
-    font-weight: bold;
+    color: #ccc;
+    font-weigh: bold;
     border-radius: 8px;
     padding: 3px 6px 2px 12px;
     margin: 0px;
