@@ -1,3 +1,7 @@
+.container {
+    color: #444;
+}
+
 a {
     font-weight: bold;
     color: #339999;
@@ -98,4 +102,17 @@ p.article {
 
 .project h5 {
 
+}
+
+footer {
+    font-style: italic;
+}
+
+footer p {
+    font-size: 9pt
+}
+
+footer a {
+    color: #333;
+    font-weight: normal;
 }
