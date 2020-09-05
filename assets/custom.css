@@ -19,7 +19,7 @@ a:hover {
 
 .header {
     background: #ccc;
-    margin-top: -50px;
+    /* margin-top: -50px; */
     padding: 5px 0px 5px 8px;
     border-radius: 10px;
     font-weight: bold;
@@ -35,11 +35,11 @@ a:hover {
     background: #fff;
     border: 0px solid #ddd;
     border-radius: 20px;
-    margin-left: -15px;
+    /* margin-left: -15px; */
 }
 
 .top-content {
-    margin-bottom: -90px;
+    margin-bottom: -40px;
 }
 
 .short-profile h3 {
