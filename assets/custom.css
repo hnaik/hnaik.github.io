@@ -1,0 +1,95 @@
+.header {
+    background: #ccc;
+    margin-top: -50px;
+    padding: 5px 0px 5px 8px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+.top-table img {
+    border-radius: 15px;
+    border: 2px solid #bbb;
+}
+
+.short-profile {
+    background: #ccc;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    margin-left: -15px;
+    padding-left: 30px;
+}
+
+.top-content {
+    margin-bottom: -50px;
+}
+
+.short-profile h3 {
+    color: #444;
+    background: #bbb;
+}
+
+.short-profile h4 {
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+a {
+    font-weight: bold;
+    color: #339999;
+}
+
+/* .main-content { */
+/*     background: #eee; */
+/*     border-radius: 20px; */
+/*     padding: 10px; */
+/*     color: #555; */
+/* } */
+
+.section h2 {
+    color: #444;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 3px 6px 2px 12px;
+    margin: 0px;
+}
+
+.section p {
+    margin-top: 10px;
+}
+
+.research-color h2 {
+    background: #0099aa;
+}
+
+.project-color h2 {
+    background: #66aaaa;
+}
+
+.pub-color h2 {
+    background: #6699aa;
+}
+
+p.article {
+    margin-top: 8px;
+    margin-bottom: 18px;
+    font-size: 90%;
+}
+
+.article a {
+    color: #blue;
+}
+
+.article b {
+    font-weight: bold;
+    color: red;
+}
+
+.project {
+
+}
+
+.project h5 {
+
+}
