@@ -35,8 +35,24 @@ a:hover {
     background: #fff;
     border: 0px solid #ddd;
     border-radius: 20px;
-    /* margin-left: -15px; */
+    margin-left: 20px;
+    padding: 0px;
 }
+
+.social {
+    background: #fff;
+    border: 0px solid #ddd;
+    border-radius: 20px;
+    margin-left: -25px;
+    padding: 0px;
+    font-size: 10px;
+}
+
+.social h4 {
+    font-size: 14px;
+    margin-bottom: -0px;
+}
+
 
 .top-content {
     margin-bottom: -40px;
@@ -47,8 +63,12 @@ a:hover {
     background: #bbb;
 }
 
+.profile-section {
+    padding: 0px;
+}
+
 p.profile-section {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 .short-profile h4 {
