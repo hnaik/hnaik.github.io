@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description"
-        content="Harish Naik — senior C++/Python systems engineer. Performance, low-latency infrastructure, and research tooling." />
+        content="Harish Naik — senior systems engineer. C++ latency, Python research tooling, and systems design. Trading-adjacent, performance-critical software." />
     <meta name="theme-color" content="#0b0f19" />
     <title>Harish Naik — Systems Engineer</title>
 
@@ -25,7 +25,7 @@
 
             <nav class="navlinks" aria-label="Primary">
                 <a href="#services">Services</a>
-                <a href="#work">Work</a>
+                <a href="#work">Focus</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact" class="btn btn-small">Contact</a>
             </nav>
@@ -38,21 +38,25 @@
         <div class="container hero" id="top">
             <div class="hero-text">
                 <p class="kicker">Senior systems engineer · C++ / Python</p>
-                <h1>Shipping performance-critical software that stays correct under pressure.</h1>
+                <h1>Performance-critical software, built for correctness and speed.</h1>
                 <p class="sub">
-                    I build low-latency systems, execution-critical infrastructure, and research tooling.
-                    I’m available for contract work and full-time roles.
+                    I design and ship performance-critical systems, trading-adjacent infrastructure,
+                    and AI/LLM research tooling with an emphasis on correctness and explainability.
+                    Available for contract work and full-time roles.
                 </p>
+
+
 
                 <div class="cta">
                     <a class="btn" href="#contact">Get in touch</a>
-                    <a class="btn btn-ghost" href="#work">See highlights</a>
+                    <a class="btn btn-ghost" href="#services">How I can help</a>
                 </div>
 
                 <div class="meta">
                     <div class="pill">Chicago · Remote OK</div>
-                    <div class="pill">C++23 · Linux · Networking · Concurrency</div>
-                    <div class="pill">Market microstructure · Execution research</div>
+                    <div class="pill">Systems design · reliability · observability</div>
+                    <div class="pill">Python research tooling · reproducible experiments</div>
+                    <div class="pill">C++ latency · concurrency · networking</div>
                 </div>
             </div>
 
@@ -61,8 +65,8 @@
                     <div class="card-title">Quick profile</div>
                     <ul class="list">
                         <li><strong>Strengths:</strong> latency, correctness, production hardening</li>
-                        <li><strong>Typical work:</strong> gateways, simulators, infra, tooling</li>
-                        <li><strong>Collaboration:</strong> hands-on, high ownership, low ceremony</li>
+                        <li><strong>Typical work:</strong> pipelines, replay, simulators, infra, tooling</li>
+                        <li><strong>Style:</strong> high ownership, clear scope, clean handoff</li>
                     </ul>
 
                     <div class="card-actions">
@@ -74,11 +78,13 @@
                     </div>
 
                     <p class="note">
-                        If you want a resume link here, add <code>files/Harish-Naik-Resume.pdf</code> and update the
-                        button below.
+                        Want a resume link here? Add <code>files/Harish-Naik-Resume.pdf</code> and link it from the
+                        buttons below.
                     </p>
 
-                    <a class="btn btn-wide btn-ghost" href="#contact">Discuss a project</a>
+                    <div class="cta">
+                        <a class="btn btn-wide btn-ghost" href="#contact">Discuss a project</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -88,27 +94,41 @@
         <section class="section" id="services">
             <div class="container">
                 <h2>Services</h2>
-                <p class="lead">Tightly scoped work, crisp deliverables, and clean handoff.</p>
+                <p class="lead">Three lanes. Clear deliverables. No fluff.</p>
 
                 <div class="grid3">
                     <div class="card">
-                        <h3>Performance and latency</h3>
-                        <p>Profiling, hot-path redesign, lock contention, allocator strategy, kernel and network tuning.
+                        <h3>Systems design</h3>
+                        <p>Architecture for performance, reliability, and operability. Practical trade-offs. Clean
+                            interfaces.</p>
+                        <p class="small">Output: design doc, risk list, rollout plan, and an execution-ready backlog.
                         </p>
-                        <p class="small">Output: before/after numbers, patch set, and a short write-up.</p>
                     </div>
 
                     <div class="card">
-                        <h3>Systems build-out</h3>
-                        <p>Greenfield components in C++ and Python with tests, CI, and sane operational defaults.</p>
-                        <p class="small">Output: working module plus docs, runbooks, and benchmarks.</p>
+                        <h3>Python research tooling</h3>
+                        <p>Replay pipelines, data plumbing, experiment harnesses, and tooling that stays reproducible.
+                        </p>
+                        <p class="small">Output: runnable baseline suite, scripts, and a results workflow you can
+                            extend.</p>
                     </div>
 
                     <div class="card">
-                        <h3>Research tooling</h3>
-                        <p>Simulators, replay pipelines, data plumbing, and experiment harnesses that are reproducible.
+                        <h3>LLM systems and explainable AI</h3>
+                        <p>
+                            Design and integration of LLM-powered components inside larger systems,
+                            with attention to evaluation, interpretability, and failure modes.
                         </p>
-                        <p class="small">Output: reproducible runs and a baseline suite you can extend.</p>
+                        <p class="small">
+                            Output: working prototype, evaluation harness, and a written analysis of trade-offs.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>C++ latency</h3>
+                        <p>Profiling, hot-path redesign, lock contention reduction, allocator strategy, network tuning.
+                        </p>
+                        <p class="small">Output: benchmarked patch set plus a short “what changed and why” write-up.</p>
                     </div>
                 </div>
 
@@ -116,8 +136,8 @@
                     <div>
                         <div class="callout-title">Engagement style</div>
                         <div class="callout-body">
-                            Fixed-scope is preferred. If hourly is needed, I start with a short diagnostic phase and a
-                            clear plan.
+                            Fixed-scope is preferred. If hourly is required, I start with a short diagnostic phase and a
+                            written plan.
                         </div>
                     </div>
                     <a class="btn btn-small" href="#contact">Start a conversation</a>
@@ -127,25 +147,27 @@
 
         <section class="section alt" id="work">
             <div class="container">
-                <h2>Selected highlights</h2>
-                <p class="lead">The pattern: reduce latency, reduce risk, increase throughput, keep it maintainable.</p>
+                <h2>What I focus on</h2>
+                <p class="lead">Work that needs speed, correctness, and calm engineering decisions.</p>
 
                 <div class="timeline">
                     <div class="titem">
                         <div class="tmarker" aria-hidden="true"></div>
                         <div class="tcontent">
-                            <div class="trole">Low-latency and trading infrastructure</div>
-                            <div class="tdesc">Built and hardened performance-critical components, with attention to
-                                observability and correctness under load.</div>
+                            <div class="trole">Trading-adjacent, performance-critical systems</div>
+                            <div class="tdesc">
+                                Components where tail latency, failure modes, and operational simplicity matter.
+                            </div>
                         </div>
                     </div>
 
                     <div class="titem">
                         <div class="tmarker" aria-hidden="true"></div>
                         <div class="tcontent">
-                            <div class="trole">Research and prototyping</div>
-                            <div class="tdesc">Designed experiment harnesses and tools that make results reproducible,
-                                comparable, and easy to iterate on.</div>
+                            <div class="trole">Research platforms that do not rot</div>
+                            <div class="tdesc">
+                                Tooling that makes results reproducible, comparable, and easy to iterate on.
+                            </div>
                         </div>
                     </div>
 
@@ -153,70 +175,86 @@
                         <div class="tmarker" aria-hidden="true"></div>
                         <div class="tcontent">
                             <div class="trole">C++ and Python delivery</div>
-                            <div class="tdesc">Shipped production code with tests, CI, and practical operational
-                                guardrails.</div>
+                            <div class="tdesc">
+                                Production code with tests, CI, and operational guardrails.
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <p class="small muted">
-                    Note: this section is intentionally generic. If you want, we can tailor it with concrete numbers and
-                    project names you are comfortable disclosing.
-                </p>
+                <div class="titem">
+                    <div class="tmarker" aria-hidden="true"></div>
+                    <div class="tcontent">
+                        <div class="trole">LLMs as decision-making components</div>
+                        <div class="tdesc">
+                            Treating large language models as system components, with explicit evaluation,
+                            grounding, and interpretability rather than opaque automation.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card" style="margin-top:14px;">
+                    <h3>Case studies</h3>
+                    <p class="muted" style="margin:0;">
+                        Coming later, once my research platform is fully ready for public write-ups. Concrete examples
+                        available on request.
+                    </p>
+                </div>
             </div>
         </section>
 
         <section class="section" id="projects">
             <div class="container">
-                <h2>Open source and writing</h2>
-                <p class="lead">A few public artifacts. More available on request.</p>
-
-                <div class="grid2">
-                    <div class="card">
-                        <h3>RL-finlab</h3>
-                        <p>Exploratory RL studies for execution and allocation, with baselines and ablations.</p>
-                        <p><a class="link" href="https://github.com/hnaik/rl-finlab" target="_blank"
-                                rel="noreferrer">View on GitHub</a></p>
-                    </div>
-
-                    <div class="card">
-                        <h3>STK</h3>
-                        <p>C++ utilities and data structures for ML-style workloads.</p>
-                        <p><a class="link" href="https://github.com/hnaik/stk" target="_blank" rel="noreferrer">View on
-                                GitHub</a></p>
-                    </div>
-                </div>
+                <h2>Code</h2>
+                <p class="lead">
+                    Public work lives on GitHub. Additional examples and private work are available on request.
+                </p>
 
                 <div class="card">
-                    <h3>What I like working on</h3>
-                    <div class="tags">
-                        <span class="tag">Market data pipelines</span>
-                        <span class="tag">Replay and simulation</span>
-                        <span class="tag">Order book modeling</span>
-                        <span class="tag">Concurrency patterns</span>
-                        <span class="tag">Latency profiling</span>
-                        <span class="tag">Reproducible experiments</span>
-                    </div>
+                    <h3>GitHub</h3>
+                    <p>
+                        A mix of systems code, research tooling, and exploratory work in C++ and Python.
+                    </p>
+                    <p>
+                        <a class="btn btn-ghost" href="https://github.com/hnaik" target="_blank" rel="noreferrer">
+                            github.com/hnaik
+                        </a>
+                    </p>
+                    <p class="small muted">
+                        Some work is intentionally private or redacted due to prior roles and client NDAs.
+                    </p>
                 </div>
             </div>
         </section>
 
+        <div class="card">
+            <h3>Current focus areas</h3>
+            <div class="tags">
+                <span class="tag">LLM system design</span>
+                <span class="tag">Explainable AI</span>
+                <span class="tag">Evaluation and failure analysis</span>
+                <span class="tag">Tool-augmented reasoning</span>
+                <span class="tag">AI in performance-sensitive systems</span>
+            </div>
+        </div>
+
         <section class="section alt" id="contact">
             <div class="container">
                 <h2>Contact</h2>
-                <p class="lead">Send a short note. If you include context, I’ll respond faster.</p>
+                <p class="lead">Send a short note with context. I respond faster when the ask is crisp.</p>
 
                 <div class="grid2">
                     <div class="card">
                         <h3>Email</h3>
-                        <p class="muted">Use your preferred email client.</p>
+                        <p class="muted">Opens your email client.</p>
                         <p>
                             <a class="btn btn-wide" id="emailLink" href="#">
-                                Email Harish
+                                consult@hnaik.com
                             </a>
                         </p>
                         <p class="small muted">
-                            Tip: include timeline, stack, and what “done” looks like.
+                            Include: timeline, stack, constraints, and what “done” looks like.
                         </p>
                     </div>
 
@@ -227,9 +265,7 @@
                             <li>Full-time: systems or execution research</li>
                             <li>Location: Chicago or remote</li>
                         </ul>
-                        <p class="small muted">
-                            If you need an NDA first, say so.
-                        </p>
+                        <p class="small muted">If you need an NDA first, say so.</p>
                     </div>
                 </div>
 
