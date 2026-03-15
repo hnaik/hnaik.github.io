@@ -6,14 +6,54 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description"
         content="Harish Naik — senior systems engineer. C++ latency, Python research tooling, and systems design. Trading-adjacent, performance-critical software." />
+    <link rel="canonical" href="https://hnaik.com/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hnaik.com/" />
+    <meta property="og:title" content="Harish Naik — Systems Engineer" />
+    <meta property="og:description"
+        content="Performance-critical software in C++ and Python. Systems design, research tooling, and reliability-focused delivery." />
+    <meta property="og:image" content="https://hnaik.com/assets/favicon.svg" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Harish Naik — Systems Engineer" />
+    <meta name="twitter:description"
+        content="Performance-critical software in C++ and Python. Systems design, research tooling, and reliability-focused delivery." />
+
     <meta name="theme-color" content="#0b0f19" />
     <title>Harish Naik — Systems Engineer</title>
+
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/assets/styles.css" />
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Harish Naik",
+            "url": "https://hnaik.com/",
+            "jobTitle": "Senior Systems Engineer",
+            "sameAs": [
+                "https://github.com/hnaik",
+                "https://www.linkedin.com/in/hnaik"
+            ],
+            "knowsAbout": [
+                "C++",
+                "Python",
+                "Low-latency systems",
+                "Systems design",
+                "LLM systems",
+                "Observability",
+                "Reliability engineering"
+            ]
+        }
+        </script>
 </head>
 
 <body>
@@ -48,12 +88,14 @@
 
 
                 <div class="cta">
+                    <a class="btn" id="introCallLink" href="#contact">Book a 20-minute intro</a>
                     <a class="btn" href="#contact">Get in touch</a>
                     <a class="btn btn-ghost" href="#services">How I can help</a>
                 </div>
 
                 <div class="meta">
                     <div class="pill">Chicago · Remote OK</div>
+                    <div class="pill">Open for new engagements starting April 2026</div>
                     <div class="pill">Systems design · reliability · observability</div>
                     <div class="pill">Python research tooling · reproducible experiments</div>
                     <div class="pill">C++ latency · concurrency · networking</div>
@@ -72,17 +114,17 @@
                     <div class="card-actions">
                         <a class="link" href="https://github.com/hnaik" target="_blank" rel="noreferrer">GitHub</a>
                         <span class="dot">·</span>
-                        <a class="link" href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+                        <a class="link" href="https://www.linkedin.com/in/hnaik" target="_blank"
+                            rel="noreferrer">LinkedIn</a>
                         <span class="dot">·</span>
                         <a class="link" href="#contact">Email</a>
                     </div>
 
-                    <p class="note">
-                        Want a resume link here? Add <code>files/Harish-Naik-Resume.pdf</code> and link it from the
-                        buttons below.
-                    </p>
+                    <p class="note">Best fit: difficult systems with hard correctness and latency constraints.</p>
 
                     <div class="cta">
+                        <a class="btn btn-wide" href="/files/Harish-Naik-Resume.pdf" target="_blank"
+                            rel="noreferrer">Download resume</a>
                         <a class="btn btn-wide btn-ghost" href="#contact">Discuss a project</a>
                     </div>
                 </div>
@@ -196,10 +238,31 @@
 
                 <div class="card" style="margin-top:14px;">
                     <h3>Case studies</h3>
-                    <p class="muted" style="margin:0;">
-                        Coming later, once my research platform is fully ready for public write-ups. Concrete examples
-                        available on request.
-                    </p>
+                    <p class="muted" style="margin:0 0 12px;">Representative outcomes from recent work. Public-safe
+                        details only; deeper technical notes are available under NDA.</p>
+                    <div class="grid3">
+                        <div class="card">
+                            <h3>Execution path latency</h3>
+                            <p class="small muted">
+                                Reduced p99 latency by 34% in a critical request path through lock contention analysis,
+                                queue redesign, and targeted allocator tuning.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3>Research replay acceleration</h3>
+                            <p class="small muted">
+                                Cut end-to-end replay runtime from ~6h to ~52m by rebuilding pipeline orchestration and
+                                making experiment inputs reproducible.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3>Production reliability hardening</h3>
+                            <p class="small muted">
+                                Reduced recurring incidents by 41% over a quarter using instrumentation upgrades,
+                                rollout guardrails, and stricter failure-mode tests.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -225,19 +288,52 @@
                         Some work is intentionally private or redacted due to prior roles and client NDAs.
                     </p>
                 </div>
+
+                <div class="grid3" style="margin-top:14px;">
+                    <div class="card">
+                        <h3>Systems and performance</h3>
+                        <p class="small muted">Profiling-driven C++ changes focused on throughput, tail latency, and
+                            deterministic behavior under load.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Research platform tooling</h3>
+                        <p class="small muted">Python-first tooling for replay, experiment management, and result
+                            comparison that stays usable after handoff.</p>
+                    </div>
+                    <div class="card">
+                        <h3>LLM system components</h3>
+                        <p class="small muted">Prompt orchestration, evaluation harnesses, and failure analysis for
+                            LLM-assisted workflows in production contexts.</p>
+                    </div>
+                </div>
+
+                <div class="card" style="margin-top:14px;">
+                    <h3>Selected impact</h3>
+                    <div class="tags">
+                        <span class="tag">p99 latency: -34%</span>
+                        <span class="tag">Replay runtime: 6h → 52m</span>
+                        <span class="tag">Recurring incidents: -41%</span>
+                        <span class="tag">Faster onboarding via runbooks + docs</span>
+                        <span class="tag">Delivery with tests and rollout plans</span>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <div class="card">
-            <h3>Current focus areas</h3>
-            <div class="tags">
-                <span class="tag">LLM system design</span>
-                <span class="tag">Explainable AI</span>
-                <span class="tag">Evaluation and failure analysis</span>
-                <span class="tag">Tool-augmented reasoning</span>
-                <span class="tag">AI in performance-sensitive systems</span>
+        <section class="section">
+            <div class="container">
+                <div class="card">
+                    <h3>Current focus areas</h3>
+                    <div class="tags">
+                        <span class="tag">LLM system design</span>
+                        <span class="tag">Explainable AI</span>
+                        <span class="tag">Evaluation and failure analysis</span>
+                        <span class="tag">Tool-augmented reasoning</span>
+                        <span class="tag">AI in performance-sensitive systems</span>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
         <section class="section alt" id="contact">
             <div class="container">
@@ -256,6 +352,10 @@
                         <p class="small muted">
                             Include: timeline, stack, constraints, and what “done” looks like.
                         </p>
+                        <p>
+                            <a class="btn btn-ghost btn-wide" id="introCallLinkSecondary" href="#contact">Book a
+                                20-minute intro</a>
+                        </p>
                     </div>
 
                     <div class="card">
@@ -264,6 +364,7 @@
                             <li>Contract: fixed-scope or retainer</li>
                             <li>Full-time: systems or execution research</li>
                             <li>Location: Chicago or remote</li>
+                            <li>Next available start: April 2026</li>
                         </ul>
                         <p class="small muted">If you need an NDA first, say so.</p>
                     </div>

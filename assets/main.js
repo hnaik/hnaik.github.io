@@ -12,21 +12,32 @@
         });
     }
 
-    // Email link (avoid scraping)
-    // const emailLink = document.getElementById("emailLink");
-    // if (emailLink) {
-    //     const user = "harish";
-    //     const domain = "hnaik.com";
-    //     const subj = encodeURIComponent("Project inquiry");
-    //     emailLink.href = `mailto:${user}@${domain}?subject=${subj}`;
-    // }
-    // Email link (avoid scraping)
+    // Contact links (avoid scraping)
+    const user = "consult";
+    const domain = "hnaik.com";
+    const email = `${user}@${domain}`;
+
     const emailLink = document.getElementById("emailLink");
     if (emailLink) {
-        const user = "consult";
-        const domain = "hnaik.com";
         const subj = encodeURIComponent("Project inquiry");
-        emailLink.href = `mailto:${user}@${domain}?subject=${subj}`;
+        const body = encodeURIComponent(
+            "Hi Harish,\n\nContext:\nTimeline:\nCurrent stack:\nConstraints:\nDefinition of done:\n\nThanks,"
+        );
+        emailLink.href = `mailto:${email}?subject=${subj}&body=${body}`;
+    }
+
+    const introLinks = [
+        document.getElementById("introCallLink"),
+        document.getElementById("introCallLinkSecondary")
+    ];
+
+    for (const link of introLinks) {
+        if (!link) continue;
+        const subj = encodeURIComponent("20-minute intro call");
+        const body = encodeURIComponent(
+            "Hi Harish,\n\nI would like to schedule a 20-minute intro call.\n\nPreferred times (include timezone):\nProject context:\n\nThanks,"
+        );
+        link.href = `mailto:${email}?subject=${subj}&body=${body}`;
     }
 
 })();
