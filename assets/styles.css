@@ -1,4 +1,19 @@
 :root {
+    --bg: #f7f6f3;
+    --panel: #ffffff;
+    --text: #1a1a24;
+    --muted: #5a6275;
+    --line: rgba(0, 0, 0, .09);
+    --accent: #2a7a6e;
+    --accent2: #1d6a5e;
+    --focus: #2a7a6e;
+    --shadow: 0 4px 24px rgba(0, 0, 0, .08);
+    --radius: 18px;
+    --max: 1100px;
+}
+
+/* Dark theme — set <html data-theme="dark"> to restore */
+:root[data-theme="dark"] {
     --bg: #0b0f19;
     --panel: #111827;
     --text: #e8edf7;
@@ -8,11 +23,8 @@
     --accent2: #6dcfaa;
     --focus: #a3c8ff;
     --shadow: 0 18px 60px rgba(0, 0, 0, .45);
-    --radius: 18px;
-    --max: 1100px;
 }
 
-/* Optional alternate palettes (set on <html data-theme="graphite"> or <html data-theme="deep-sea">) */
 :root[data-theme="graphite"] {
     --bg: #0f1115;
     --panel: #161b22;
@@ -46,10 +58,9 @@ body {
 
 body {
     margin: 0;
-    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    background: radial-gradient(1200px 600px at 20% 0%, rgba(123, 178, 255, .13), transparent 60%),
-        radial-gradient(1200px 600px at 80% 20%, rgba(126, 231, 191, .08), transparent 55%),
-        radial-gradient(900px 500px at 75% 100%, rgba(200, 160, 100, .05), transparent 60%),
+    font-family: 'DM Sans', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background: radial-gradient(1000px 500px at 15% 0%, rgba(42, 122, 110, .05), transparent 55%),
+        radial-gradient(800px 400px at 85% 10%, rgba(29, 96, 112, .03), transparent 50%),
         var(--bg);
     color: var(--text);
     line-height: 1.45;
@@ -61,7 +72,7 @@ a {
 }
 
 code {
-    background: rgba(255, 255, 255, .06);
+    background: rgba(0, 0, 0, .04);
     padding: 0.15rem 0.35rem;
     border-radius: 8px;
     border: 1px solid var(--line);
@@ -87,7 +98,7 @@ code {
     width: auto;
     height: auto;
     padding: 10px 12px;
-    background: #111a31;
+    background: #ffffff;
     border: 1px solid var(--line);
     border-radius: 10px;
     z-index: 999;
@@ -95,7 +106,7 @@ code {
 
 .header {
     border-bottom: 1px solid var(--line);
-    background: linear-gradient(to bottom, rgba(15, 22, 41, .70), rgba(15, 22, 41, .10));
+    background: linear-gradient(to bottom, rgba(247, 246, 243, .90), rgba(247, 246, 243, .20));
 }
 
 .nav {
@@ -115,7 +126,7 @@ code {
     justify-content: center;
     border-radius: 14px;
     border: 1px solid var(--line);
-    background: rgba(255, 255, 255, .04);
+    background: rgba(0, 0, 0, .03);
     font-weight: 700;
     letter-spacing: .5px;
 }
@@ -149,7 +160,7 @@ code {
     height: 44px;
     border-radius: 14px;
     border: 1px solid var(--line);
-    background: rgba(255, 255, 255, .04);
+    background: rgba(0, 0, 0, .03);
     cursor: pointer;
 }
 
@@ -179,9 +190,11 @@ code {
 
 h1 {
     margin: 0 0 14px;
-    font-size: clamp(30px, 3.2vw, 48px);
-    line-height: 1.05;
-    letter-spacing: -0.02em;
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: clamp(32px, 3.4vw, 52px);
+    font-weight: 300;
+    line-height: 1.08;
+    letter-spacing: -0.01em;
 }
 
 .sub {
@@ -204,27 +217,27 @@ h1 {
     gap: 10px;
     padding: 12px 14px;
     border-radius: 14px;
-    border: 1px solid rgba(123, 178, 255, .52);
-    background: rgba(123, 178, 255, .30);
+    border: 1px solid rgba(42, 122, 110, .45);
+    background: rgba(42, 122, 110, .10);
     color: var(--text);
     font-weight: 600;
     transition: background-color .15s ease, border-color .15s ease, filter .15s ease;
 }
 
 .btn:hover {
-    border-color: rgba(123, 178, 255, .65);
-    background: rgba(123, 178, 255, .24);
-    filter: brightness(1.04);
+    border-color: rgba(42, 122, 110, .65);
+    background: rgba(42, 122, 110, .16);
+    filter: brightness(0.97);
 }
 
 .btn-ghost {
     border-color: var(--line);
-    background: rgba(255, 255, 255, .04);
+    background: rgba(0, 0, 0, .03);
 }
 
 .btn-ghost:hover {
-    background: rgba(255, 255, 255, .08);
-    border-color: rgba(255, 255, 255, .22);
+    background: rgba(0, 0, 0, .06);
+    border-color: rgba(0, 0, 0, .16);
 }
 
 .btn-small {
@@ -245,7 +258,7 @@ h1 {
 
 .pill {
     border: 1px solid var(--line);
-    background: rgba(255, 255, 255, .03);
+    background: rgba(0, 0, 0, .03);
     color: var(--muted);
     padding: 8px 10px;
     border-radius: 999px;
@@ -259,7 +272,7 @@ h1 {
 
 .card {
     border: 1px solid var(--line);
-    background: rgba(255, 255, 255, .03);
+    background: var(--panel);
     border-radius: var(--radius);
     padding: 18px;
 }
@@ -280,7 +293,7 @@ h1 {
 }
 
 .link:hover {
-    color: #9fc7ff;
+    color: #1f5c54;
     text-decoration: underline;
 }
 
@@ -290,12 +303,12 @@ button:focus-visible,
 .hamburger:focus-visible {
     outline: 2px solid var(--focus);
     outline-offset: 2px;
-    box-shadow: 0 0 0 3px rgba(10, 16, 28, .55);
+    box-shadow: 0 0 0 3px rgba(240, 238, 232, .80);
 }
 
 .dot {
     margin: 0 8px;
-    color: rgba(255, 255, 255, .30);
+    color: rgba(0, 0, 0, .25);
 }
 
 .note {
@@ -309,14 +322,16 @@ button:focus-visible,
 }
 
 .section.alt {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, .02), rgba(255, 255, 255, .00));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .02), rgba(0, 0, 0, .00));
     border-top: 1px solid var(--line);
     border-bottom: 1px solid var(--line);
 }
 
 h2 {
     margin: 0 0 10px;
-    font-size: 1.8rem;
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1.9rem;
+    font-weight: 400;
     letter-spacing: -0.01em;
 }
 
@@ -363,7 +378,7 @@ h2 {
     justify-content: space-between;
     gap: 12px;
     border: 1px solid var(--line);
-    background: rgba(255, 255, 255, .02);
+    background: rgba(0, 0, 0, .02);
     padding: 14px;
     border-radius: var(--radius);
 }
@@ -395,8 +410,15 @@ h2 {
     height: 12px;
     margin-top: 6px;
     border-radius: 50%;
-    background: rgba(123, 178, 255, .48);
-    border: 1px solid rgba(123, 178, 255, .62);
+    background: rgba(42, 122, 110, .40);
+    border: 1px solid rgba(42, 122, 110, .60);
+}
+
+h3 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 400;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
 }
 
 .trole {
@@ -417,7 +439,7 @@ h2 {
 
 .tag {
     border: 1px solid var(--line);
-    background: rgba(255, 255, 255, .03);
+    background: rgba(0, 0, 0, .03);
     color: var(--muted);
     padding: 8px 10px;
     border-radius: 999px;
@@ -437,7 +459,7 @@ h2 {
 .footer-logo {
     width: 44px;
     height: auto;
-    opacity: 0.85;
+    opacity: 0.75;
 }
 
 @media (max-width: 900px) {
@@ -473,7 +495,7 @@ h2 {
         padding: 14px;
         border-radius: 16px;
         border: 1px solid var(--line);
-        background: rgba(15, 22, 41, .95);
+        background: rgba(247, 246, 243, .97);
         box-shadow: var(--shadow);
     }
 }
