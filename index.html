@@ -240,75 +240,67 @@
                 </div>
 
 
-                <div class="card" style="margin-top:14px;">
-                    <h3>Case studies</h3>
-                    <p class="muted" style="margin:0 0 12px;">Representative outcomes from recent work. Public-safe
-                        details only; deeper technical notes are available under NDA.</p>
-                    <div class="grid3">
-                        <div class="card">
-                            <h3>Execution path latency</h3>
-                            <p class="small muted">
-                                Reduced p99 latency by 34% in a critical request path through lock contention analysis,
-                                queue redesign, and targeted allocator tuning.
-                            </p>
-                        </div>
-                        <div class="card">
-                            <h3>Research replay acceleration</h3>
-                            <p class="small muted">
-                                Cut end-to-end replay runtime from ~6h to ~52m by rebuilding pipeline orchestration and
-                                making experiment inputs reproducible.
-                            </p>
-                        </div>
-                        <div class="card">
-                            <h3>Production reliability hardening</h3>
-                            <p class="small muted">
-                                Reduced recurring incidents by 41% over a quarter using instrumentation upgrades,
-                                rollout guardrails, and stricter failure-mode tests.
-                            </p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
         <section class="section" id="projects">
             <div class="container">
-                <h2>Code</h2>
+                <h2>Projects</h2>
                 <p class="lead">
-                    Public work lives on GitHub. Additional examples and private work are available on request.
+                    Selected public work. Additional client work and private projects available under NDA.
                 </p>
 
-                <div class="card">
-                    <h3>GitHub</h3>
-                    <p>
-                        A mix of systems code, research tooling, and exploratory work in C++ and Python.
-                    </p>
-                    <p>
-                        <a class="btn btn-ghost" href="https://github.com/hnaik" target="_blank" rel="noreferrer">
-                            github.com/hnaik
-                        </a>
-                    </p>
-                    <p class="small muted">
-                        Some work is intentionally private or redacted due to prior roles and client NDAs.
-                    </p>
+                <div class="grid3">
+                    <div class="card">
+                        <h3>EEGL</h3>
+                        <p class="small muted">Explanation-Enhanced Graph Learning</p>
+                        <p>Research framework that improves GNN accuracy through an iterative feedback loop:
+                            run a GNN, extract structural patterns from its explanations, inject those patterns
+                            as new node features, and repeat. Makes GNN explanations actionable rather than
+                            merely interpretive.</p>
+                        <p class="small muted">Python · PyTorch · PyTorch Geometric · Gaston subgraph miner ·
+                            Glasgow Subgraph Solver</p>
+                        <p class="small muted">Published: arXiv 2403.07849</p>
+                        <p>
+                            <a class="btn btn-ghost" href="https://github.com/hnaik/EEGL" target="_blank"
+                                rel="noreferrer">github.com/hnaik/EEGL</a>
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Substrate</h3>
+                        <p class="small muted">Open-source OMS/EMS simulation platform</p>
+                        <p>C++ limit order book and matching engine using SBE wire protocol (the same binary
+                            encoding as CME iLink), with a Python layer for fill simulation, historical replay
+                            against real Databento tick data, and DAG-based workflow orchestration. Built for
+                            reproducible execution research.</p>
+                        <p class="small muted">C++ · CMake · SBE · Python · Polars · Databento</p>
+                        <p>
+                            <a class="btn btn-ghost" href="https://github.com/hnaik/substrate" target="_blank"
+                                rel="noreferrer">github.com/hnaik/substrate</a>
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Domain-specific RAG system</h3>
+                        <p class="small muted">Confidential client project</p>
+                        <p>High-confidence retrieval-augmented generation pipeline for a specialized domain
+                            where retrieval accuracy is business-critical. Built with explicit evaluation
+                            harnesses, per-query confidence scoring, and failure classification. Designed to
+                            fail loudly rather than hallucinate quietly.</p>
+                        <p class="small muted">RAG · MCP · long-context design · evaluation harness</p>
+                    </div>
                 </div>
 
-                <div class="grid3" style="margin-top:14px;">
-                    <div class="card">
-                        <h3>Systems and performance</h3>
-                        <p class="small muted">Profiling-driven C++ changes focused on throughput, tail latency, and
-                            deterministic behavior under load.</p>
+                <div class="callout" style="margin-top:18px;">
+                    <div>
+                        <div class="callout-title">Past client outcomes</div>
+                        <div class="callout-body">
+                            p99 latency -34% · replay runtime 6h to 52m · recurring incidents -41% over one quarter.
+                            Deeper technical notes available under NDA.
+                        </div>
                     </div>
-                    <div class="card">
-                        <h3>Research platform tooling</h3>
-                        <p class="small muted">Python-first tooling for replay, experiment management, and result
-                            comparison that stays usable after handoff.</p>
-                    </div>
-                    <div class="card">
-                        <h3>LLM system components</h3>
-                        <p class="small muted">Prompt orchestration, evaluation harnesses, and failure analysis for
-                            LLM-assisted workflows in production contexts.</p>
-                    </div>
+                    <a class="btn btn-small" href="#contact">Request details</a>
                 </div>
 
             </div>
