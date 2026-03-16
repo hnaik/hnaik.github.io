@@ -6,9 +6,23 @@
     const nav = document.querySelector(".nav");
     const btn = document.querySelector(".hamburger");
     if (nav && btn) {
-        btn.addEventListener("click", () => {
+        function closeMenu() {
+            nav.classList.remove("open");
+            btn.setAttribute("aria-expanded", "false");
+        }
+
+        btn.addEventListener("click", (e) => {
+            e.stopPropagation();
             const open = nav.classList.toggle("open");
             btn.setAttribute("aria-expanded", open ? "true" : "false");
+        });
+
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") closeMenu();
+        });
+
+        document.addEventListener("click", (e) => {
+            if (nav.classList.contains("open") && !nav.contains(e.target)) closeMenu();
         });
     }
 
