@@ -1,232 +1,363 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description"
+        content="Harish Naik, senior systems engineer. C++, Rust, and Python for trading-adjacent, performance-critical software." />
+    <link rel="canonical" href="https://hnaik.com/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hnaik.com/" />
+    <meta property="og:title" content="Harish Naik, Systems Engineer" />
+    <meta property="og:description"
+        content="Performance-critical software in C++, Rust, and Python. Low-latency infrastructure, research tooling, and production-safe LLM systems." />
+    <meta property="og:image" content="https://hnaik.com/assets/favicon-512.png" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Harish Naik, Systems Engineer" />
+    <meta name="twitter:description"
+        content="Performance-critical software in C++, Rust, and Python. Low-latency infrastructure, research tooling, and production-safe LLM systems." />
+    <meta name="twitter:image" content="https://hnaik.com/assets/favicon-512.png" />
+
+    <meta name="theme-color" content="#0b0f19" />
+    <title>Harish Naik, Systems Engineer</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous">
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&display=swap"
+        rel="stylesheet">
 
-    <link
-      rel="stylesheet"
-      href="assets/custom.css"
-      type="text/css"
-      media="screen" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Harish Naik",
+            "url": "https://hnaik.com/",
+            "jobTitle": "Senior Systems Engineer",
+            "sameAs": [
+                "https://github.com/hnaik",
+                "https://www.linkedin.com/in/hnaik"
+            ],
+            "knowsAbout": [
+                "C++",
+                "Rust",
+                "Python",
+                "Low-latency systems",
+                "LLM systems",
+                "Research tooling",
+                "Reliability engineering"
+            ]
+        }
+        </script>
+</head>
+
+<body>
+    <a class="skip" href="#content">Skip to content</a>
+
+    <header class="header">
+        <div class="container nav">
+            <a class="brand" href="#top" aria-label="Harish Naik home">
+                <img src="/assets/logo-square.png" alt="HN logo" width="30" height="30" />
+            </a>
+
+            <nav class="navlinks" aria-label="Primary">
+                <a href="#services">Services</a>
+                <a href="#work">Focus</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact" class="btn btn-small">Contact</a>
+            </nav>
+
+            <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <div class="container hero" id="top">
+            <div class="hero-text">
+                <p class="kicker">Senior systems engineer · C++ / Rust / Python</p>
+                <h1>Performance-critical software, built for correctness and speed.</h1>
+                <p class="sub">
+                    I design and build fast, reliable systems in C++, Rust, and Python: from
+                    low-latency infrastructure and data pipelines to RAG systems, MCP integrations,
+                    and agentic workflows built to production standards.
+                    Available for contract work and full-time roles.
+                </p>
 
 
-    <title>Harish G. Naik</title>
-  </head>
-  <body>
-    <main role="main">
-      <div class="jumbotron">
-	<div class="container">
-	  <h2 class="col-md-12 header">Harish Naik</h2>
-	  <div class="row top-content">
-	    <div class="col-md-3 top-table">
-	      <img src="images/cave.jpg" width="200px" height="200px" />
-	    </div>
-	    <div class="col-md-4 short-profile">
-	      <p class="profile-section">
-	  	<h4>Ph.D. Student</h4>
-		<a href="https://cs.uic.edu/">The Department of Computer Science</a> <br />
-	  	<a href="https://uic.edu/">University of Illinois at Chicago</a>
-	      </p>
 
-	      <p class="profile-section">
-	  	<h4>Development Engineer</h4>
-	  	<a href="https://www.aquatic.com/">Aquatic Capital Management</a>
-	      </p>
+                <div class="cta">
+                    <a class="btn" id="introCallLink" href="#contact">Book a 20-minute intro</a>
+                    <a class="btn" href="#contact">Get in touch</a>
+                    <a class="btn btn-ghost" href="#services">How I can help</a>
+                </div>
+
+                <div class="meta">
+                    <div class="pill">Chicago · Remote OK</div>
+                    <div class="pill">Open for new engagements starting March 2026</div>
+                    <div class="pill">C++ / Rust · latency · concurrency · networking</div>
+                    <div class="pill">Python research tooling · reproducible experiments</div>
+                    <div class="pill">LLM evaluation · interpretability · production safety</div>
+                </div>
             </div>
-	    <div class="col-md-2 social">
-	      <p class="profile-section">
-		<h4>Social</h4>
-		<ul>
-    		  <li> <a href="https://www.linkedin.com/in/hnaik/">LinkedIn Profile</a>
-     		  <li> <a href="files/resume-harish_naik-20200506.pdf">Resume</a>
-	  	  <li> <a href="https://github.com/hnaik">Github</a>
-		  <li> Twitter <a href="https://twitter.com/hnaik">@hnaik</a> <a href="https://twitter.com/hnaik?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @hnaik</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-		</ul>
-	      </p>
-	      <p class="profile-section">
-		<h4>Reading</h4>
-		<ul>
-		  <li> <a href="https://www.goodreads.com/review/list/3196379-harish-naik?shelf=currently-reading">Currently Reading</a>
-		  <li> <a href="https://www.goodreads.com/review/list/3196379?date_added=2020">Books Read in 2020</a>
-		  <li> <a href="https://www.goodreads.com/user/show/3196379-harish-naik">Goodreads Profile Page</a>
-		</ul>
-	      </p>
-	    </div>
-	    <div class="col-md-3 social">
-	      <p class="profile-section">
-		<h4>Podcasts I Like</h4>
-		<ul>
-		  <li> <a href="">NPR: Wait Wait Don't Tell Me</a>
-		  <li> <a href="">NPR: Throughline</a>
-		  <li> <a href="">NPR: Hidden Brain</a>
-		  <li> <a href="">Joy of X</a>
-		  <li> <a href="">NPR: Planet Money</a>
-		  <li> <a href="">Freakonomics</a>
-		  <li> <a href="">NPR: Radio Lab</a>
-		  <li> <a href="">This American Life</a>
-		  <li> <a href="">NPR Fresh Air</a>
-		</ul>
-	      </p>
-	    </div>
-	  </div>
-	</div>
-      </div>
 
-      <div class="container main-content">
-	<div class="row">
-	  <div class="col-md-6 section research-color">
-            <h2>Research</h2>
-            <p>
-	      I am currently working under the supervision
-	      of <a href="https://homepages.math.uic.edu/~gyt">Prof. Gyorgy
-		Turan</a>. 
+            <div class="hero-card" role="region" aria-label="Quick profile">
+                <div class="card">
+                    <div class="card-title">Quick profile</div>
+                    <ul class="list">
+                        <li><strong>Strengths:</strong> latency, correctness, production hardening</li>
+                        <li><strong>Typical work:</strong> pipelines, replay, simulators, infra, tooling</li>
+                        <li><strong>Style:</strong> high ownership, clear scope, clean handoff</li>
+                    </ul>
 
-		<p>
-			My research explores explainability in Artificial Intelligence. 
-		We are investigating the mathematical underpinnings and the philosophical 
-		foundations for scientific explanations in black-box AI algorithms.
-		I work with graph/network data. I spend most of my time building Graph Neural Network 
-		models and analyzing studying their behavior. Social networks, molecules as a 
-		network of atoms and their bonds, knowledge bases, the relationship between 
-		financial instruments, transportation networks, etc., are some examples of graph data.
-		</p>
+                    <div class="card-actions">
+                        <a class="link" href="https://github.com/hnaik" target="_blank" rel="noreferrer">GitHub</a>
+                        <span class="dot">·</span>
+                        <a class="link" href="https://www.linkedin.com/in/hnaik" target="_blank"
+                            rel="noreferrer">LinkedIn</a>
+                        <span class="dot">·</span>
+                        <a class="link" href="#contact">Email</a>
+                    </div>
 
-		<p>I also spend time thinking about the Philosophy of science, ethics & fairness in AI, 
-			robust ML algorithms, causality, knowledge representations & reasoning, and 
-			statistical learning theory.</p>
+                    <p class="note">Best fit: difficult systems with hard correctness and latency constraints. Resume/CV
+                        available upon request.</p>
 
-		<p>Previously, I worked as a researcher in Human-Centered Computing. 
-			We designed mechanisms for understanding contexts of co-located groups 
-			in small meeting spaces. The work aimed at inferring contextual information 
-			based on the geometric configuration and physical orientation of participants.</p>
-	    </p>
-	  </div>
+                    <div class="cta">
+                        <a class="btn btn-wide btn-ghost" href="#contact">Request resume / CV</a>
+                        <a class="btn btn-wide btn-ghost" href="#contact">Discuss a project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-	  <div class="col-md-6 section project-color">
-            <h2>Projects</h2>
-        <p>
-			<a href="https://github.com/hnaik/stk"><h5>STK - Scientific Toolkit</h5></a>
-			Implementation of low level datastructures and algorithms for Machine Learning, in C++17/C++20
-		</p>
-		<p>
-			<a href="https://github.com/hnaik/iconn"><h5>iConn - Interpretable Convolutional Neural Network</h5></a>
-			A demo implementation of explainable covolutional neural networks using 2D images using Mutual Information.
-		</p>
-		<p>
-			<a href="https://github.com/qualia-lab/proxe"><h5>proxe - Proxemics Engine Suite</h5></a>
-			A library and UI tool suite written in Qt/C++ for conducting studies of co-located groups.
-			That UI application also has an analysis suite for coding and analysing observations. 
-	    </p>
-	  </div>
-	</div>
+    <main id="content">
+        <section class="section" id="services">
+            <div class="container">
+                <h2>Services</h2>
+                <p class="lead">Three lanes. Every engagement starts with a written plan before any code is written.</p>
 
-	<div class="col-md-13 section pub-color">
-	  <h2>Publications</h2>
+                <div class="grid3">
+                    <div class=”card”>
+                        <h3>Python pipelines and tooling</h3>
+                        <p>Replay pipelines, data plumbing, experiment harnesses, and workflow tooling that stays
+                            reproducible and usable after handoff.</p>
+                        <p class=”small”>Output: runnable baseline suite, scripts, and a results workflow you can
+                            extend.</p>
+                    </div>
 
-	  <p class="article">
-	    <b>H. Naik</b>, Gyorgy Turan,
-	    <a href="https://arxiv.org/abs/2012.07179">Explanation from
-	    Specification</a> - Explainable Agency in Artificial Intelligence
-	    Workshop at the 35th AAAI Conference on Artificial Intelligence - A
-	    Virtual Conference, February 2-9, 2021
-	  </p>
+                    <div class=”card”>
+                        <h3>LLM integration and agentic systems</h3>
+                        <p>
+                            RAG pipelines, MCP integrations, long-context system design, and tool-augmented agents
+                            — built as proper engineering artifacts with evaluation harnesses and explicit failure
+                            modes.
+                        </p>
+                        <p class=”small”>
+                            Output: working system, evaluation harness, and a written analysis of trade-offs and risks.
+                        </p>
+                    </div>
 
-	  <p class="article">
-	    <b>H. Naik</b>,
-	    D. Chattopadhyay, <a href="https://dl.acm.org/citation.cfm?id=3312805">
-	      IPME Workbench: A Data Processing Tool for Mixed-Methodology Studies
-	      of Group Interactions</a> - CHI EA ‘19 Extended Abstracts of the
-	    2019 CHI Conference on Human Factors in Computing Systems. Paper
-	    No. LBW1517. Glasgow, Scotland, UK – May 04-09, 2019
-	  </p>
+                    <div class=”card”>
+                        <h3>Systems programming in C++ and Rust</h3>
+                        <p>Design and delivery of fast, reliable systems from the ground up. Profiling, hot-path
+                            redesign, lock contention, allocator strategy, and network tuning where needed.</p>
+                        <p class=”small”>Output: production-ready code with tests, benchmarks, and a written
+                            explanation of design decisions.</p>
+                    </div>
+                </div>
 
-	  <p class="article">
-	    K. Yoshii, <b>H. Naik</b>, C. Yu,
-	    P. Beckman, <a href="https://dl.acm.org/citation.cfm?id=1988806">Extending
-	      and benchmarking the “Big Memory” implementation on Blue Gene/P
-	      Linux</a> - International Workshop on Runtime and Operating Systems
-	    for Supercomputers (ROSS 2011), Tuscon, AZ
-	  </p>
+                <div class="callout">
+                    <div>
+                        <div class="callout-title">Engagement style</div>
+                        <div class="callout-body">
+                            Fixed-scope is preferred. Every engagement starts with a diagnostic phase: a short written
+                            plan
+                            covering scope, risks, and what "done" looks like before any code is written.
+                        </div>
+                    </div>
+                    <a class="btn btn-small" href="#contact">Start a conversation</a>
+                </div>
+            </div>
+        </section>
 
-	  <p class="article">
-	    R. Gupta, <b>H. Naik</b> and P. Beckman,
-	    <a href="https://journals.sagepub.com/doi/abs/10.1177/1094342010369118?journalCode=hpcc">Understanding
-	      Checkpointing Overheads on Massive-Scale Systems: Analysis on the IBM
-	      Blue Gene/P System</a> – International Journal of High Performance
-	    Computing Applications (IJHPCA), May 2010
-	  </p>
+        <section class="section alt" id="work">
+            <div class="container">
+                <h2>What I focus on</h2>
+                <p class="lead">Performance-critical problems where the cost of getting it wrong is high.</p>
 
-	  <p class="article">
-	    K. Yoshii, K. Iskra, <b>H. Naik</b>, P. Beckman and P. C. Broekema,
-	    <a href="https://dl.acm.org/citation.cfm?id=1978751">Performance and
-	      Scalability Evaluation of “Big Memory” on Blue Gene Linux</a> –
-	    International Journal of High Performance Computing Applications
-	    (IJHPCA), May 2010
-	  </p>
+                <div class="timeline">
+                    <div class="titem">
+                        <div class="tmarker" aria-hidden="true"></div>
+                        <div class="tcontent">
+                            <div class="trole">Trading-adjacent, performance-critical systems</div>
+                            <div class="tdesc">
+                                Components where tail latency, failure modes, and operational simplicity matter.
+                            </div>
+                        </div>
+                    </div>
 
-	  <p class="article">
-	    P. Balaji, <b>H. Naik</b> and
-	    N. Desai, <a href="https://ieeexplore.ieee.org/document/5395352/">Understanding
-	      Network Saturation Behavior on Large-Scale Blue Gene/P Systems</a> –
-	    The 15th International Conference on Parallel and Distributed Systems
-	    (ICPADS’09), Shenzhen, China
-	  </p>
+                    <div class="titem">
+                        <div class="tmarker" aria-hidden="true"></div>
+                        <div class="tcontent">
+                            <div class="trole">Research platforms that do not rot</div>
+                            <div class="tdesc">
+                                Tooling that makes results reproducible, comparable, and easy to iterate on.
+                            </div>
+                        </div>
+                    </div>
 
-	  <p class="article">
-	    <b>H. Naik</b>, R. Gupta and
-	    P. Beckman, <a href="https://ieeexplore.ieee.org/document/5363066/">Analyzing
-	      Checkpointing Trends for Applications on Petascale Systems</a> –
-	    Second International Workshop on Parallel Programming Models and
-	    Systems Software (P2S2) for High-End Computing in conjunction with
-	    International Conference on Parallel Processing (ICPP), 2009
-	  </p>
+                    <div class="titem">
+                        <div class="tmarker" aria-hidden="true"></div>
+                        <div class="tcontent">
+                            <div class="trole">Design before code</div>
+                            <div class="tdesc">
+                                Every engagement starts with a written plan covering scope, risks,
+                                and interfaces. No code until "done" is defined.
+                            </div>
+                        </div>
+                    </div>
 
-	  <p class="article">
-	    K. Yoshii, K. Iskra, P. C. Broekema, <b>H. Naik</b>, and P. Beckman,
-	    <a href="https://ieeexplore.ieee.org/document/5365704/">Characterizing
-	      the Performance of Big Memory on Blue Gene Linux</a> – In “Proceedings
-	    of the 2nd Int. Workshop on Parallel Programming Models and Systems
-	    Software for High-End Computing,” Vienna, Austria, Sept. 2009.
-	  </p>
-	</div>
-      </div> <!-- /container -->
+                    <div class="titem">
+                        <div class="tmarker" aria-hidden="true"></div>
+                        <div class="tcontent">
+                            <div class="trole">LLMs as decision-making components</div>
+                            <div class="tdesc">
+                                Treating large language models as system components, with explicit evaluation,
+                                grounding, and interpretability rather than opaque automation.
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-      <hr />
 
+                <div class="card" style="margin-top:14px;">
+                    <h3>Case studies</h3>
+                    <p class="muted" style="margin:0 0 12px;">Representative outcomes from recent work. Public-safe
+                        details only; deeper technical notes are available under NDA.</p>
+                    <div class="grid3">
+                        <div class="card">
+                            <h3>Execution path latency</h3>
+                            <p class="small muted">
+                                Reduced p99 latency by 34% in a critical request path through lock contention analysis,
+                                queue redesign, and targeted allocator tuning.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3>Research replay acceleration</h3>
+                            <p class="small muted">
+                                Cut end-to-end replay runtime from ~6h to ~52m by rebuilding pipeline orchestration and
+                                making experiment inputs reproducible.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3>Production reliability hardening</h3>
+                            <p class="small muted">
+                                Reduced recurring incidents by 41% over a quarter using instrumentation upgrades,
+                                rollout guardrails, and stricter failure-mode tests.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="container">
+                <h2>Code</h2>
+                <p class="lead">
+                    Public work lives on GitHub. Additional examples and private work are available on request.
+                </p>
+
+                <div class="card">
+                    <h3>GitHub</h3>
+                    <p>
+                        A mix of systems code, research tooling, and exploratory work in C++ and Python.
+                    </p>
+                    <p>
+                        <a class="btn btn-ghost" href="https://github.com/hnaik" target="_blank" rel="noreferrer">
+                            github.com/hnaik
+                        </a>
+                    </p>
+                    <p class="small muted">
+                        Some work is intentionally private or redacted due to prior roles and client NDAs.
+                    </p>
+                </div>
+
+                <div class="grid3" style="margin-top:14px;">
+                    <div class="card">
+                        <h3>Systems and performance</h3>
+                        <p class="small muted">Profiling-driven C++ changes focused on throughput, tail latency, and
+                            deterministic behavior under load.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Research platform tooling</h3>
+                        <p class="small muted">Python-first tooling for replay, experiment management, and result
+                            comparison that stays usable after handoff.</p>
+                    </div>
+                    <div class="card">
+                        <h3>LLM system components</h3>
+                        <p class="small muted">Prompt orchestration, evaluation harnesses, and failure analysis for
+                            LLM-assisted workflows in production contexts.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section alt" id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p class="lead">Send a short note with context. I respond faster when the ask is crisp.</p>
+
+                <div class="grid2">
+                    <div class="card">
+                        <h3>Email</h3>
+                        <p class="muted">Opens your email client.</p>
+                        <p>
+                            <a class="btn btn-wide" id="emailLink" href="#">
+                                consult@hnaik.com
+                            </a>
+                        </p>
+                        <p class="small muted">
+                            Include: timeline, stack, constraints, and what “done” looks like.
+                        </p>
+                        <p>
+                            <a class="btn btn-ghost btn-wide" id="introCallLinkSecondary" href="#contact">Book a
+                                20-minute intro</a>
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Availability</h3>
+                        <ul class="list">
+                            <li>Contract: fixed-scope or retainer</li>
+                            <li>Full-time: systems or execution research</li>
+                            <li>Location: Chicago or remote</li>
+                            <li>Next available start: March 2026</li>
+                        </ul>
+                        <p class="small muted">If you need an NDA first, say so.</p>
+                    </div>
+                </div>
+
+                <footer class="footer">
+                    <img src="/assets/main-logo-transparent.png" alt="Harish Naik, LLC" class="footer-logo" />
+                    <div class="small muted">© <span id="year"></span> Harish Naik, LLC</div>
+                </footer>
+            </div>
+        </section>
     </main>
 
-    <footer class="container">
-      <p>
-	&copy; Harish Naik 2020,
-	<a href="https://hnaik.com">
-	  https://hnaik.com
-	</a>
-      </p>
-    </footer>
+    <script src="/assets/main.js"></script>
+</body>
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous">
-    </script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous">
-    </script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous">
-    </script>
-  </body>
 </html>
